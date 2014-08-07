@@ -7,14 +7,25 @@ Hello API is a *greeting* service
 # Group Notes
 Notes related resources of the **Hello API**
 
-## Grretings Collection [/greetings]
+## Greetings Collection [/greetings]
 ### List all Notes [GET]
 + Response 200 (application/json)
 
-        [{
-          "id": 1, "message": "Hello", "name":"John"
-        }, {
-          "id": 2, "message": "Bonjour", "name":"Smith"
-        }]
+    + Headers
+    
+            content-type: application/json; charset=utf-8
+
+    + Body  
+            
+            [{
+                "id": 1,
+                "message": "Hello",
+                "name":"John"
+            },
+            {
+                "id": 2,
+                "message": "Bonjour",
+                "name":"Smith"
+            }]
 
 
